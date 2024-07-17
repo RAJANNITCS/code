@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 public class PassByValue {
     public static void main(String[] args) {

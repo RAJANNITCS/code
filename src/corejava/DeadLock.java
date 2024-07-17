@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 class SharedResource {
     synchronized void method1(SharedResource otherResource) {

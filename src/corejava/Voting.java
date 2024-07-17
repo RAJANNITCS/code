@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 import java.util.Scanner;
 

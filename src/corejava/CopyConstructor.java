@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 class Person11 implements Cloneable {
     public Integer age;

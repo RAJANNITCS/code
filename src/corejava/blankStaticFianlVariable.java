@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 class Bike {
     public static final Integer topSpeed;

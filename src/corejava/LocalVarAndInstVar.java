@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 class Person {
     //Instance variables

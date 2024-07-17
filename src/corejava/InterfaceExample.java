@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 interface Vehicle {
     void start();

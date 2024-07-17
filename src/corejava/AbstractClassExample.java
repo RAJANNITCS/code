@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 abstract class Vehicle1 {
     public static Integer speed = 0;

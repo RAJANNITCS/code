@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 public class ConstantExample {
     public static final Integer MAX_USER = 25;

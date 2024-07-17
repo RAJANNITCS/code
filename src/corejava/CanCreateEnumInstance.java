@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 enum Color {
     RED, GREEN, BLUE;

@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 public class StaticBlockExample {
     public static Integer employeeAge;

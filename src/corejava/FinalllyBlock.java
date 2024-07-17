@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 public class FinalllyBlock {
     public static void main(String[] ages) {

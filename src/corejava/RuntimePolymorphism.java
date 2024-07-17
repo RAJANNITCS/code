@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 class Animal {
     void sound() {

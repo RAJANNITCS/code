@@ -1,4 +1,4 @@
-package DeadlockExample;
+package corejava;
 
 class A1 {
     public void display() {
