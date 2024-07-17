@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 public class CreateDaemonThread extends Thread {
 

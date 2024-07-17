@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 class Student1 implements Cloneable{
     public String name;

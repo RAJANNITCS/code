@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 class OuterClass {
     // Static field in the outer class

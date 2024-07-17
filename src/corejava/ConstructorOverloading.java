@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 class Bike4 {
     public int startSpeed;

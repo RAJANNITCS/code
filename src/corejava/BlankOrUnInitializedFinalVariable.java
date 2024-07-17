@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 class Person6 {
     public final String personPanNumber;

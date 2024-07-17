@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 public class FinalizedMethodExample {
     public static void main(String[] args) {

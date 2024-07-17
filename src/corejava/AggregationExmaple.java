@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 import java.util.List;
 import java.util.ArrayList;

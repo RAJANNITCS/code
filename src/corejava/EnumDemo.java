@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 enum Days {
     SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY

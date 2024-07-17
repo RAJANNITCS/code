@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 class SuperClass {
     // Superclass method throws NullPointerException (unchecked exception)

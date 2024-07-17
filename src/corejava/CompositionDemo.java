@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 class Heart {
     private Integer size;

@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 class CompileTimePolymorphism {
     void display(int a) {

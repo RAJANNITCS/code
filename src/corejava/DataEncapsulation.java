@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 class Person8 {
     private Integer age;

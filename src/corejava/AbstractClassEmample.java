@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 abstract class Car {
     // Abstract method (does not have a body)

@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 public class EqualMethodAndEqualOperater {
     public static void main(String[] args) {

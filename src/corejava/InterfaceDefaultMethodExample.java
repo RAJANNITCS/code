@@ -1,4 +1,4 @@
-package corejava;
+package DeadlockExample;
 
 interface I1  {
 
