@@ -5,6 +5,7 @@ public class Employee {
     private String name;
     private Double salary;
     private String department;
+    private String code;
 
     public Employee(Integer age, String name, Double salary) {
         this.age = age;
@@ -17,6 +18,13 @@ public class Employee {
         this.name = name;
         this.salary = salary;
         this.department = department;
+    }
+
+    public Employee(String code,String name,String departement,Integer age) {
+        this.code = code;
+        this.name = name;
+        this.department = departement;
+        this.age = age;
     }
 
     public Integer getAge() {
