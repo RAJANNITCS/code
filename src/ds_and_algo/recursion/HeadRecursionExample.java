@@ -1,15 +1,15 @@
 package ds_and_algo.recursion;
 
-public class TailRecursionExample {
+public class HeadRecursionExample {
 
     public static void fun(int num) {
         if (num > 0) {
-            System.out.println(num);
             fun(num - 1);
+            System.out.println(num);
         }
     }
 
     public static void main(String[] args) {
-        TailRecursionExample.fun(5);
+        HeadRecursionExample.fun(5);
     }
 }
