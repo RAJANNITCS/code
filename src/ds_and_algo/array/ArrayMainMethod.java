@@ -1,6 +1,6 @@
 package ds_and_algo.array;
 
-public class MainMethod {
+public class ArrayMainMethod {
 
     public static void main(String[] args) {
         ArrayADT arr = new ArrayADT(10);
