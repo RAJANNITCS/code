@@ -49,11 +49,12 @@ public class SinglyLinkedlistADT {
         }
     }
 
-    public static Integer count(Node current) {
+    public Integer count(Node headNode) {
+        Node curr = headNode;
         Integer count = 0;
-        while(current != null) {
+        while(curr != null) {
             count++;
-            current = current.next;
+            curr = curr.next;
         }
         return count;
     }
@@ -146,4 +147,107 @@ public class SinglyLinkedlistADT {
         }
         return searchV1(curr.next, key);
     }
+
+    public void insertAtBeginning(Integer value) {
+        Node tailNode = new Node(value);
+        tailNode.next = this.headNode;
+        this.headNode = tailNode;
+    }
+
+    public void insertAtEndOfList(Integer value) {
+        Node curr = this.headNode;
+        Node newNode = new Node(value);
+        while (curr.next != null) {
+            curr = curr.next;
+        }
+        curr.next = newNode;
+    }
+
+    public void insert(Integer poss, Integer value) {
+        Node tailNode,curr;
+        if (poss == 0) {
+            tailNode = new Node(value);
+            tailNode.next = this.headNode;
+            this.headNode = tailNode;
+        } else {
+            curr = headNode;
+            for (int i = 0; i < poss - 1 && curr != null; i++) {
+                curr = curr.next;
+            }
+            if (curr != null) {
+                tailNode = new Node(value);
+                tailNode.next = curr.next;
+                curr.next = tailNode;
+                curr = null;
+            } else {
+                System.out.println("Possition is not valid !!");
+            }
+        }
+    }
+
+    public Integer deleteAtBeginning() {
+        Integer value = 0;
+        if (this.headNode != null) {
+            Node curr = this.headNode;
+            this.headNode = this.headNode.next;
+            value = curr.data;
+            curr = null;
+        } else {
+            System.out.println("List is Empty !!!");
+        }
+        return value;
+    }
+
+    public Integer deleteAtEndOfList() {
+        Integer value = 0;
+        if (this.headNode != null) {
+            Node curr = this.headNode;
+            Node tail = null;
+
+            if (this.headNode.next == null) {
+                value = this.headNode.data;
+                this.headNode = null;
+            }else {
+                while (curr.next != null) {
+                    tail = curr;
+                    curr = curr.next;
+                }
+                value = curr.data;
+                tail.next = curr.next;
+                curr = null;
+            }
+        } else {
+            System.out.println("List is Empty !!!");
+        }
+        return value;
+    }
+
+    public Integer deleteAtPos(Integer poss) {
+        Integer value = -1;
+        if (this.headNode != null) {
+            Node curr = this.headNode;
+            Node tail = null;
+            if (poss == 1) {
+                this.headNode = this.headNode.next;
+                value = curr.data;
+                curr = null;
+            } else {
+                for (int i = 0; i < poss -1 && curr != null; i++) {
+                    tail = curr;
+                    curr = curr.next;
+                }
+                if (tail != null && curr != null) {
+                    tail.next = curr.next;
+                    value = curr.data;
+                    curr = null;
+                }else {
+                    System.out.println("Positions is not valid !!");
+                }
+            }
+        } else {
+            System.out.println("List is Empty !!");
+        }
+        return value;
+    }
+
 }
