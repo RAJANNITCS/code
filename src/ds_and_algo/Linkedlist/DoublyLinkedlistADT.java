@@ -78,4 +78,67 @@ public class DoublyLinkedlistADT {
         }
     }
 
+    public Integer deleteFirstNodeOfList() {
+        if (this.headNode == null) {
+            System.out.println("List is empty !!");
+            return 0;
+        } else {
+            DNode curr = this.headNode;
+            headNode = headNode.next;
+            headNode.prev.next = null;
+            return curr.data;
+        }
+    }
+
+    public Integer deleteNodeAtGivePoss(Integer poss) {
+        if (poss <= 0) {
+            System.out.println("List is empty !!!");
+            return 0;
+        }
+        DNode curr = this.headNode;
+        if (poss == 1) {
+            headNode = headNode.next;
+            headNode.prev.next = null;
+        } else {
+            for (int i = 0; i < poss - 1; i++) {
+                curr = curr.next;
+                if (curr == null) {
+                    break;
+                }
+            }
+            if (curr != null) {
+                curr.prev.next = curr.next;
+                if (curr.next != null) {
+                    curr.next.prev = curr.prev;
+                }
+            } else {
+                System.out.println("Provide wrong possion !!!");
+                return 0;
+            }
+
+        }
+        return curr.data;
+    }
+
+    public Integer deleteNodeAtEndOfList() {
+        if (this.headNode == null) {
+            System.out.println("List is empty !!!");
+            return 0;
+        }
+        DNode curr = this.headNode;
+        if (curr.prev == null && curr.next == null) {
+            this.headNode = null;
+            return curr.data;
+        } else {
+            while (curr.next != null) {
+                curr = curr.next;
+            }
+            if (curr.prev != null) {
+                curr.prev.next = null;
+                return curr.data;
+            }
+        }
+        return 0;
+    }
+
 }

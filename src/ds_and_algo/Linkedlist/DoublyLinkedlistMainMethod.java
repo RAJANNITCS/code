@@ -17,6 +17,13 @@ public class DoublyLinkedlistMainMethod {
 //        d1.insertAtEndOffList(6);
 //        d1.insertAtEndOffList(8);
 //        d1.insertAtEndOffList(10);
-        DoublyLinkedlistADT.displayRec(d1.headNode);
+//        DoublyLinkedlistADT.displayRec(d1.headNode);
+        d1.display();
+//        d1.deleteFirstNodeOfList();
+//        System.out.println("After delete first node");
+//        System.out.println("delete value="+d1.deleteNodeAtGivePoss(10));
+//        System.out.println("After delete at give poss");
+        System.out.println("Delete value="+d1.deleteNodeAtEndOfList());
+        d1.display();
     }
 }
